@@ -67,11 +67,12 @@ php artisan migrate
 Para rodar a aplicação localmente, use o seguinte comando:
 
 bash
-Copiar código
+
 php artisan serve
 O servidor estará disponível em http://127.0.0.1:8000.
 
 Estrutura de Diretórios
+
 /app: Contém os controladores, modelos e lógica de negócios.
 /routes: Define as rotas da aplicação.
 /database/migrations: Arquivos de migração para criar as tabelas no banco de dados.
@@ -81,8 +82,7 @@ Rotas Principais
 POST /doadores: Cadastro de doador.
 GET /doadores: Listar todos os doadores.
 GET /pontos-de-coleta: Listar pontos de coleta.
-Licença
-Este repositório está licenciado sob a MIT License.
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
