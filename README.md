@@ -1,3 +1,88 @@
+Documentação do Back-end (Laravel)
+
+Quero Doar! - Back-end (Laravel)
+
+Quero Doar! é uma plataforma de doação de órgãos, conectando doadores, pontos de coleta e beneficiários. Esta documentação descreve o processo de configuração e execução do back-end da aplicação, que é desenvolvido utilizando o framework Laravel.
+
+Tecnologias Utilizadas
+
+PHP: Linguagem de programação utilizada.
+Laravel: Framework PHP para a criação da API RESTful.
+MySQL: Banco de dados utilizado para armazenamento de dados.
+Composer: Gerenciador de dependências do PHP.
+Pré-requisitos
+PHP 7.4 ou superior.
+Composer (faça o download em getcomposer.org).
+MySQL ou MariaDB.
+Instalação e Configuração
+
+1. Clonar o Repositório
+Clone o repositório do back-end para a sua máquina local:
+
+bash
+Copiar código
+git clone https://github.com/Harissis/Projeto-de-Extensao-de-Doacao-de-Orgaos-back
+cd Quero-Doar-backend
+2. Instalar as Dependências
+Use o Composer para instalar as dependências do Laravel:
+
+bash
+Copiar código
+composer install
+3. Configuração do Banco de Dados
+Crie um banco de dados MySQL para a aplicação. Após isso, copie o arquivo .env.example para .env e configure as credenciais do banco de dados:
+
+bash
+
+cp .env.example .env
+No arquivo .env, configure as informações de banco de dados:
+
+plaintext
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=quero_doar
+DB_USERNAME=root
+DB_PASSWORD=
+
+4. Gerar a Chave de Aplicação
+   
+Gere a chave de aplicação Laravel:
+
+bash
+
+
+php artisan key:generate
+
+5. Rodar as Migrações
+
+Execute as migrações para criar as tabelas no banco de dados:
+
+bash
+Copiar código
+php artisan migrate
+6. Rodar o Servidor de Desenvolvimento
+Para rodar a aplicação localmente, use o seguinte comando:
+
+bash
+Copiar código
+php artisan serve
+O servidor estará disponível em http://127.0.0.1:8000.
+
+Estrutura de Diretórios
+/app: Contém os controladores, modelos e lógica de negócios.
+/routes: Define as rotas da aplicação.
+/database/migrations: Arquivos de migração para criar as tabelas no banco de dados.
+/resources/views: Contém as views Blade (caso haja uso de Blade no backend).
+/public: Arquivos públicos como imagens e CSS para o back-end.
+Rotas Principais
+POST /doadores: Cadastro de doador.
+GET /doadores: Listar todos os doadores.
+GET /pontos-de-coleta: Listar pontos de coleta.
+Licença
+Este repositório está licenciado sob a MIT License.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -64,3 +149,19 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
