@@ -62,6 +62,7 @@ Execute as migrações para criar as tabelas no banco de dados:
 bash
 Copiar código
 php artisan migrate
+
 6. Rodar o Servidor de Desenvolvimento
 Para rodar a aplicação localmente, use o seguinte comando:
 
