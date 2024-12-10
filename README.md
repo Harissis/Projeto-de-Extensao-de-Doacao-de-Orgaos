@@ -1,5 +1,13 @@
 Documentação do Back-end (Laravel)
 
+ Integrantes do Projeto
+
+1. Rafael Alves Harissis
+2. Luiz Felipe Santos Freitas
+3. Jamilly De Souza Oliveira
+4. Fabricio Pereira da Costa Filho
+
+
 Quero Doar! - Back-end (Laravel)
 
 Quero Doar! é uma plataforma de doação de órgãos, conectando doadores, pontos de coleta e beneficiários. Esta documentação descreve o processo de configuração e execução do back-end da aplicação, que é desenvolvido utilizando o framework Laravel.
